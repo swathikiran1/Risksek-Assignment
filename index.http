@@ -1,0 +1,32 @@
+POST http://localhost:3001/addBook
+Content-Type: application/json
+
+{
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K.Rowling",
+    "ISBN": 9780590353427
+}
+###
+
+POST http://localhost:3001/addBook
+Content-Type: application/json
+
+{
+    "title": "A Song of Ice and Fire: A Game of Thrones",
+    "author": "George R.R. Martin",
+    "ISBN": 9780553573404,
+    "fileFormat": "PDF"
+}
+###
+
+GET http://localhost:3001/listBooks
+Content-Type: application/json
+###
+
+DELETE http://localhost:3001/deleteBook
+Content-Type: application/josn
+
+{
+    "ISBN": 9780061122415
+}
+###
